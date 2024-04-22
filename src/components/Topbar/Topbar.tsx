@@ -90,22 +90,34 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
         </div>
 
         <div className={`flex items-center space-x-4 ${showMenu ? 'block' : 'hidden'} sm:flex`}>
-          <div>
-            <Link
-              href="/Categories"
-              className="bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded text-brand-orange hover:bg-dark-fill-2"
-            >
-              Questions
-            </Link>
-          </div>
-         <Link href="/About"> <div  className="cursor-pointer text-brand-orange hover:text-white">
-            About 
+          {router.pathname === "/Questions" ? (
+            <div>
+              <Link
+                href="/Categories"
+                className="bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded text-brand-orange hover:bg-dark-fill-2 hover:text-white" 
+              >
+                Categories
+              </Link>
             </div>
-         </Link>
+          ) : (
+            <div>
+              <Link
+                href="/Questions"
+                className="bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded text-brand-orange hover:bg-dark-fill-2 hover:text-white" 
+              >
+                Questions
+              </Link>
+            </div>
+          )}
+          {router.pathname === "/" && (
+            <div  className="cursor-pointer text-brand-orange hover:text-white"   onClick={() => window.scrollTo({ top: 750, behavior: "smooth" })}>
+              About 
+            </div>
+          )}
           <Link href="/Contact">
-          <div className="cursor-pointer text-brand-orange hover:text-white">
-            Contact
-          </div>
+            <div className="cursor-pointer text-brand-orange hover:text-white">
+              Contact
+            </div>
           </Link>
           
           {user && problemPage && <Timer />}

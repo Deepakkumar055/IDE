@@ -4,21 +4,25 @@ import Lottie from "lottie-react";
 import aboutGif from "../../../public/aboutPageGIF.json";
 import Footer from "@/components/Footer/Footer";
 
-
 const AboutPage = () => {
   return (
     <div className="bg-black">
-      
-     
-      <section id="about-head" className="section-p1 flex items-center text-white bg-black mt-16">
-       
+      <h1 className="text-4xl text-white text-center py-8">About Us</h1>
+
+      <section
+        id="about-head"
+        className="section-p1 flex items-center text-white bg-black"
+      >
         <div className="w-1/2">
-          <Lottie animationData={aboutGif} className="w-full h-auto max-w-md ml-20 rounded-lg shadow-lg" />
+          <Lottie
+            animationData={aboutGif}
+            className="w-full h-auto max-w-md ml-20 rounded-lg shadow-lg"
+          />
         </div>
-        
-        <div className="w-1/2 px-8 ">
+
+        <div className="w-1/2 px-8">
           <h2 className="text-2xl font-bold mb-4">Who We Are</h2>
-          <p className=" mb-4">
+          <p className="mb-4">
             Welcome to CodeStop, your premier destination for online learning,
             coding IDE, placement services, community-driven doubt solving, and
             CV building. At CodeStop, we're committed to empowering individuals
@@ -45,28 +49,35 @@ const AboutPage = () => {
               direction="left"
               scrollamount="5"
             >
-              Premier online learning, coding IDE, placement services, community-driven doubt solving, and CV building platform empowering digital skills.
+              Premier online learning, coding IDE, placement services,
+              community-driven doubt solving, and CV building platform empowering
+              digital skills.
             </marquee>
           </div>
         </div>
       </section>
-      <section id="about-app" className="section-p1 text-center py-16 bg-black text-white">
+      <section
+        id="about-app"
+        className="section-p1 text-center py-16 bg-black text-white"
+      >
         <h1 className="text-4xl mb-4">
-          JOIN US {" "}
+          JOIN US{" "}
           <a href="#" className="text-blue-500">
             NOW
           </a>
         </h1>
         <div className="video w-3/4 mx-auto">
-          <video autoPlay loop muted className="w-full rounded-lg shadow-lg">
+          <video
+            autoPlay
+            loop
+            muted
+            className="w-full rounded-lg shadow-lg"
+          >
             <source src="1.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
-      <section
-        id="feature"
-        className="section-p1 flex justify-center flex-wrap py-8 bg-black text-white"
-      >
+      <section className="section-p1 flex justify-center flex-wrap py-8 bg-black text-white">
         <FeatureBox image="f1.png" title="Online Learning" />
         <FeatureBox image="f2.png" title="Temporal Evaluations" />
         <FeatureBox image="f3.png" title="Affordable" />
@@ -93,7 +104,6 @@ const AboutPage = () => {
           </button>
         </div>
       </section>
-     
     </div>
   );
 };

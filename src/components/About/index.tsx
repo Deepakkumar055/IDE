@@ -10,7 +10,7 @@ const AboutPage = () => {
     <div className="bg-black">
       
      
-      <section id="about-head" className="section-p1 flex items-center text-white bg-black mt-16">
+      <section id="about-head" className="section-p1 flex items-center text-white bg-black ">
        
         <div className="w-1/2">
           <Lottie animationData={aboutGif} className="w-full h-auto max-w-md ml-20 rounded-lg shadow-lg" />

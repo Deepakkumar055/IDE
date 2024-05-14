@@ -9,6 +9,7 @@ import { auth, firestore } from "@/firebase/firebase";
 const AuthComponent = () => {
     const router = useRouter();
     const firebaseAuth = getAuth();
+    const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(firebaseAuth);
 
     // State for user inputs
     const [inputs, setInputs] = useState({ email: "", displayName: "", password: "", phoneNumber: "", code: "" });
@@ -43,13 +44,21 @@ const AuthComponent = () => {
         }
 
         try {
-            const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(firebaseAuth);
+          
             const newUserCredential = await createUserWithEmailAndPassword(inputs.email, inputs.password);
-            const user = newUserCredential.user;
+            const user = newUserCredential?.user;
+
+            if (!user) {
+                // User is not authenticated
+                toast.error("User authentication failed", { position: "top-center" });
+                return;
+            }
 
             // Send email verification
-            await sendEmailVerification(user);
-            toast.info("Email verification link sent! Please verify your email to complete registration.", { position: "top-center" });
+         /*  await sendEmailVerification(user);
+            toast.info("Email verification link sent! Please verify your email to complete registration.", { position: "top-center" }); */
+
+            router.push('/StudentHome');
 
             // Save user data to Firestore
             const userData = {
@@ -63,7 +72,7 @@ const AuthComponent = () => {
                 solvedProblems: [],
                 starredProblems: [],
             };
-            await setDoc(doc(firestore, "users", user.uid), userData);
+            await setDoc(doc(firestore, "users", user?.uid), userData);
 
             // Redirect user to verification page
             router.push(`/verification?email=${inputs.email}`);

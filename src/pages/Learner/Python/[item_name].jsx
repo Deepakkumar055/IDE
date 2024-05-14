@@ -2,7 +2,7 @@ import React, { useMemo, lazy, Suspense } from 'react';
 import { useRouter } from 'next/router';
 import Topbar from '../../../components/Topbar/Topbar';
 
-const Sidebar = lazy(() => import('../../../components/TextContent/Sidebar/Sidebar'));
+const Sidebar = lazy(() => import('../../../components/TextContent/SideBar/Sidebar'));
 const Header = lazy(() => import('../../../components/TextContent/Header/Header'));
 const Body = lazy(() => import('../../../components/TextContent/Body/Body'));
 

@@ -1,8 +1,8 @@
 import React from "react";
-import Sidebar from "../../../components/TextContent/Sidebar/Sidebar";
+import Sidebar from "../../../components/TextContent/SideBar/Sidebar";
 import Header from "../../../components/TextContent/Header/Header"
 import Body from "../../../components/TextContent/Body/Body"
-
+import Topbar from "../../../components/Topbar/Topbar";
 const CPage = () => {
     const topics =["C Home", "C Intro", "C Get Started", "C Syntax", "C Output", "C Comments", "C Variables", "C Data Types", "C Constants", "C Operators", "C Strings", "C Math", "C Booleans", "C If..Else", "C Switch", "C While Loop", "C For Loop", "C Break/Continue", "C Arrays", "C User Input", "C Memory Address", "C Pointers", "C Functions", "C Function Parameters", "C Function Declaration", "C Recursion"]
     return (

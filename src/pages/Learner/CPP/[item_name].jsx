@@ -7,7 +7,7 @@ import { cppSyntax } from '../../../utils/Constants/CPP/syntax';
 import CodeHighlighter from '../../../components/CodeHighlighter/CodeHighlighter';
 import MarkDownRenderer from '../../../components/MarkDownRenderer/MarkDownRenderer';
 
-const Sidebar = lazy(() => import('../../../components/TextContent/Sidebar/Sidebar'));
+const Sidebar = lazy(() => import('../../../components/TextContent/SideBar/Sidebar'));
 const Header = lazy(() => import('../../../components/TextContent/Header/Header'));
 const Body = lazy(() => import('../../../components/TextContent/Body/Body'));
 
@@ -68,7 +68,7 @@ const ItemPage = () => {
               <div className="text-xl mt-4">
                       <CppTopicsContent content = {(
                           <>
-                            <strong>C++</strong> is one of the world's most popular programming languages.
+                            <strong>C++</strong> is one of the world&apos;s most popular programming languages.
                             <br/> 
                             <br/>                  
                             <strong>C++</strong>  is fun and easy to learn!
@@ -87,7 +87,7 @@ to programs and allows code to be reused, lowering development costs.
                            
                             <br/> 
                             <br/> 
-                            <strong>C++</strong> programs can run really fast because they're closer to the hardware. This 
+                            <strong>C++</strong> programs can run really fast because they&apos;re closer to the hardware. This 
 makes it great for applications where speed is important, like video games or 
 high-performance software.
                             <br/> 
@@ -102,7 +102,7 @@ operating systems.
               <>
               <Header title="" subtitle="Difference between C and C++"/>
               <div className="text-xl mt-4 mb-4">
-                <Image src="/DiffbwCC++.png" width={1000} height={300}/>
+                <Image src="/DiffbwCC++.png" width={1000} height={300} alt="diff bw c c++"/>
               </div>
              
               </>
@@ -141,11 +141,11 @@ operating systems.
                               code.
                             </p>
                             <br/> 
-                            <p>Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all 
+                            <p>Popular IDE&apos;s include Code::Blocks, Eclipse, and Visual Studio. These are all 
                                free, and they can be used to both edit and debug C++ code.
                             </p>
                             <br/> 
-                            <strong>Note:</strong> Web-based IDE's can work as well, but functionality is limited
+                            <strong>Note:</strong> Web-based IDE&apos;s can work as well, but functionality is limited
                              execution is essential.
                             <br/> 
                             <br/>

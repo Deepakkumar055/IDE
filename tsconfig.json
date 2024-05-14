@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/StudentHome/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/StudentHome/index.tsx", "src/components/About/About.jsx", "src/components/Buttons/NavigationButton.jsx", "src/components/TopicCard/TopicCard.jsx", "src/pages/Admission/index.jsx"],
   "exclude": ["node_modules"]
 }

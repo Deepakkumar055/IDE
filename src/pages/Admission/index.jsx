@@ -86,7 +86,7 @@ const AdmissionPortalPage = () => {
                 </div>
                 <div>
                   <label htmlFor="motherName" className="block mb-1">
-                    Mother's Name
+                    Mother&apos;s Name
                   </label>
                   <input
                     type="text"
@@ -97,7 +97,7 @@ const AdmissionPortalPage = () => {
                 </div>
                 <div>
                   <label htmlFor="fatherName" className="block mb-1">
-                    Father's Name
+                    Father&apos;s Name
                   </label>
                   <input
                     type="text"

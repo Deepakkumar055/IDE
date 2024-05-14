@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import Sidebar from '../../../components/TextContent/Sidebar/Sidebar';
+import Sidebar from '../../../components/TextContent/SideBar/Sidebar';
 import Header from '../../../components/TextContent/Header/Header';
 import Body from '../../../components/TextContent/Body/Body';
 

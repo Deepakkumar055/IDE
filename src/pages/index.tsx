@@ -32,7 +32,7 @@ const Home: NextPage= () => {
     if (user) {
       router.push('/StudentHome');
     }
-  }, [user]); 
+  }, [user,router]); 
   return (
     <>
       <Topbar />

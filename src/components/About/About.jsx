@@ -21,20 +21,20 @@ const About = () => {
           <p className=" mb-4">
             Welcome to CodeStop, your premier destination for online learning,
             coding IDE, placement services, community-driven doubt solving, and
-            CV building. At CodeStop, we're committed to empowering individuals
-            with the skills they need to thrive in today's digital world. With
-            our online learning platform, you'll have access to a vast library
+            CV building. At CodeStop, we are committed to empowering individuals
+            with the skills they need to thrive in  digital world. With
+            our online learning platform, you will have access to a vast library
             of courses covering a wide range of topics, from programming
             languages to advanced software development techniques. Our intuitive
             IDE (Integrated Development Environment) provides a seamless coding
             experience, allowing you to practice and hone your skills in
-            real-time. But we don't stop there. CodeStop also offers placement
+            real-time. But we do not stop there. CodeStop also offers placement
             services to help you kickstart your career in the tech industry. Our
             dedicated team works tirelessly to connect you with top employers
             and job opportunities that align with your skills and aspirations.
             Join our vibrant community of learners and experts, where you can
             collaborate, share knowledge, and get your doubts solved in
-            real-time. And when you're ready to showcase your skills to
+            real-time. And when you are ready to showcase your skills to
             potential employers, our CV builder tool will help you create a
             professional resume that highlights your achievements and expertise.
           </p>

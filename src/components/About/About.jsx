@@ -5,7 +5,7 @@ import aboutGif from "../../../public/aboutPageGIF.json";
 import Footer from "@/components/Footer/Footer";
 
 
-const AboutPage = () => {
+const About = () => {
   return (
     <div className="bg-black">
       
@@ -100,11 +100,14 @@ const AboutPage = () => {
 
 const FeatureBox = ({ image, title }) => {
   return (
+    <>
+   
     <div className="fe-box p-4 text-center w-1/2 sm:w-1/3 md:w-1/6">
       <img src={image} alt={title} className="mx-auto" />
       <h6 className="mt-2">{title}</h6>
     </div>
+    </>
   );
 };
 
-export default AboutPage;
+export default About;

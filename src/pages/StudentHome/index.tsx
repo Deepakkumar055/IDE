@@ -24,7 +24,7 @@ const StudentHome = () => {
   const features = [
     { id: '', label: 'Student', icon: <HiUser size={44} className="text-orange-500" /> },
     { id: 'Learner', label: 'Learner', icon: <HiUserGroup size={44} className="text-orange-500" /> },
-    { id: 'Categories', label: 'Assessment', icon: <HiClipboardCheck size={44} className="text-orange-500" /> },
+    { id: 'Questions', label: 'Assessment', icon: <HiClipboardCheck size={44} className="text-orange-500" /> },
     { id: 'placement', label: 'Placement Service', icon: <HiBriefcase size={44} className="text-orange-500" /> },
     { id: 'assignment', label: 'Assignment', icon: <HiDocumentReport size={44} className="text-orange-500" /> }, // Example icon
     { id: 'community', label: 'Community', icon: <HiChatAlt2 size={44} className="text-orange-500" /> }, // Example icon

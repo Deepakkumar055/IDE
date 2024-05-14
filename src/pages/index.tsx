@@ -11,7 +11,7 @@ import { useRouter } from 'next/router';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '@/firebase/firebase';
 import Footer from '@/components/Footer/Footer';
-import About from '../components/About'
+import About from '@/components/About/About'
 
 
 const Home: NextPage= () => {

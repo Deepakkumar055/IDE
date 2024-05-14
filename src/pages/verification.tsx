@@ -1,5 +1,3 @@
-// ./src/pages/verification.tsx
-
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { toast } from "react-toastify";
@@ -12,7 +10,7 @@ const VerificationPage: React.FC = () => {
     useEffect(() => {
         if (email && typeof email === "string") {
             try {
-                auth.applyActionCode(email);
+                // auth.applyActionCode(email);
                 toast.success("Email verified successfully! You can now complete the registration process.", { position: "top-center" });
             } catch (error) {
                 toast.error("Failed to verify email. Please try again later.", { position: "top-center" });
